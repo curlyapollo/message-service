@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>peer7</name>
+    </assembly>
+    <members>
+        <member name="T:peer7.Controllers.MessageController">
+            <summary>
+            Контроллер сервиса
+            </summary>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.#cctor">
+            <summary>
+            Статический конструктор с заполнением списков из файлов.
+            </summary>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.GenerationOfEmail(System.String)">
+            <summary>
+            Генерация Email по имени.
+            </summary>
+            <param name="userName">Имя пользователя.</param>
+            <returns>Email пользователя.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.GenerationOfText">
+            <summary>
+            Генерация строки.
+            </summary>
+            <returns>Искомая строка.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.SerializationOfUsers">
+            <summary>
+            Сериализация списка пользователей.
+            </summary>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.SerializationOfMessages">
+            <summary>
+            Сериализация списка сообщений.
+            </summary>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.FillingOfLists">
+            <summary>
+            Заполнение списков.
+            </summary>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.GetUsers">
+            <summary>
+            Получение всех пользователей.
+            </summary>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.GetSliceOfUsers(System.Int32,System.Int32)">
+            <summary>
+            Получение среза пользователей.
+            </summary>
+            <param name="limit">Максимальное количество пользователей.</param>
+            <param name="offset">Индекс первого.</param>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.GetUser(System.String)">
+            <summary>
+            Получение пользователя по Email'у.
+            </summary>
+            <param name="email">Email пользователя.</param>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.GetMessagesByReceiverAndSender(System.String,System.String)">
+            <summary>
+            Получение сообщений по отправителю и получателю.
+            </summary>
+            <param name="senderId">Email отправителя.</param>
+            <param name="receiverId">Email получателя.</param>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.GetMessageByReceiver(System.String)">
+            <summary>
+            Получение сообщений по получателю.
+            </summary>
+            <param name="receiverId">Email получателя.</param>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.GetMessagesBySender(System.String)">
+            <summary>
+            Получение сообщений по отправителю.
+            </summary>
+            <param name="senderId">Email отправителя.</param>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.AdditionOfUser(System.String)">
+            <summary>
+            Добавление нового пользователя
+            </summary>
+            <param name="userName">Имя нового пользователя.</param>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="M:peer7.Controllers.MessageController.AdditionOfMessage(System.String,System.String,System.String,System.String)">
+            <summary>
+            Добавление нового сообщения.
+            </summary>
+            <param name="subject">Тема нового сообщения.</param>
+            <param name="message">Текст нового сообщения.</param>
+            <param name="senderId">Email отправителя.</param>
+            <param name="receiverId">Email получателя.</param>
+            <returns>Результат операции.</returns>
+        </member>
+        <member name="T:peer7.Helpers.MessageClass">
+            <summary>
+            Класс сообщений.
+            </summary>
+        </member>
+        <member name="P:peer7.Helpers.MessageClass.Subject">
+            <summary>
+            Тема сообщения.
+            </summary>
+        </member>
+        <member name="P:peer7.Helpers.MessageClass.Message">
+            <summary>
+            Текст сообщения.
+            </summary>
+        </member>
+        <member name="P:peer7.Helpers.MessageClass.SenderId">
+            <summary>
+            Идентификатор отправителя.
+            </summary>
+        </member>
+        <member name="P:peer7.Helpers.MessageClass.ReceiverId">
+            <summary>
+            Идентификатор получателя.
+            </summary>
+        </member>
+        <member name="T:peer7.Helpers.User">
+            <summary>
+            Класс пользователя.
+            </summary>
+        </member>
+        <member name="P:peer7.Helpers.User.Email">
+            <summary>
+            Идентификатор пользователя.
+            </summary>
+        </member>
+        <member name="P:peer7.Helpers.User.UserName">
+            <summary>
+            Имя пользователя.
+            </summary>
+        </member>
+    </members>
+</doc>
