@@ -7,7 +7,7 @@ The program has the following functionality:
 The list of users is ordered (it is sorted lexicographically by mail address (Email) in ascending order). Users have two properties - string UserName and string Email.
 Messages have four properties: Subject, Message,
 SenderId and ReceiverId.
-This one ЧТО ЭТО is used by the handlers listed below.
+This one is used by the handlers listed below.
 2. A handler which is available via the POST method for initializing (ie, initial filling) the list of users and the list of messages randomly (using Random) has been implemented. Lists are filled using the specified handler.
 3. Two handlers available only through the GET method have been implemented:
 a) to obtain information about the user by his identifier (Email), considering that when the user is absent, the response code should be HTTP 404 (not found);
